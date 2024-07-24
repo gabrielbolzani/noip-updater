@@ -1,5 +1,5 @@
 
-#Atualizador de IP Dinâmico com Docker
+# Atualizador de IP Dinâmico com Docker
 Introdução
 Este projeto fornece um script Python para automatizar a atualização do seu IP dinâmico no serviço de DNS do NO-IP. O script é executado em um container Docker, facilitando a instalação e o gerenciamento.
 
@@ -25,7 +25,7 @@ Use o código com cuidado.
 
 Edite o Dockerfile com um editor de texto e localize o bloco de variáveis de ambiente:
 Snippet de código
-# Define variáveis de ambiente padrão (podem ser sobrescritas ao executar o container)
+## Define variáveis de ambiente padrão (podem ser sobrescritas ao executar o container)
 ENV LOGIN=????
 ENV PASSWORD=????
 ENV HOSTNAME=????
