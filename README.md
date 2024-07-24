@@ -25,7 +25,7 @@ As variáveis de ambiente usadas no projeto são:
 Clone o repositório e navegue até o diretório do projeto:
 
 ```bash
-git clone https://github.com/gabrielbolzani/noip-updater
+git clone github.com/gabrielbolzani/noip-updater
 cd <NOME_DO_DIRETORIO>
 ```
 
