@@ -27,4 +27,13 @@ Clone o repositório e navegue até o diretório do projeto:
 ```bash
 git clone <URL_DO_SEU_REPOSITORIO>
 cd <NOME_DO_DIRETORIO>
+```
 
+Abra o arquivo Dockerfile em um editor de texto e localize as seguintes linhas:
+```bash
+# Define variáveis de ambiente padrão (podem ser sobrescritas ao executar o container)
+ENV LOGIN=????
+ENV PASSWORD=????
+ENV HOSTNAME=????
+ENV SLEEP_TIME=????
+```
