@@ -76,7 +76,7 @@ Se você já configurou as variáveis diretamente no Dockerfile, pode usar o com
 sudo docker run -d --name update-no-ip-container update-no-ip
 ```
 
-4. Verificar os Logs do Container
+### 4. Verificar os Logs do Container
 Para verificar se o container está funcionando corretamente e para visualizar os logs, use:
 ```bash
 sudo docker logs update-no-ip-container
