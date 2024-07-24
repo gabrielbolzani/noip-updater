@@ -43,6 +43,7 @@ LOGIN: Seu login para o serviço de DNS.
 PASSWORD: Sua senha para o serviço de DNS.
 HOSTNAME: O nome do host para o qual o IP deve ser atualizado.
 SLEEP_TIME: O intervalo em segundos entre atualizações de IP (por exemplo, 600 para 10 minutos).
+
 Depois de modificar, o bloco deve ficar assim:
 ```bash
 # Define variáveis de ambiente padrão (podem ser sobrescritas ao executar o container)
@@ -57,3 +58,37 @@ Navegue até o diretório onde o Dockerfile e o main.py estão localizados. Em s
 ```bash
 sudo docker build -t update-no-ip .
 ```
+
+### 3. Executar o Container Docker
+Depois de construir a imagem, você pode executar o container. Use o comando abaixo, substituindo as variáveis de ambiente se necessário. Caso tenha configurado o Dockerfile com os valores padrões, você pode usar este comando diretamente:
+```bash
+sudo docker run -d \
+  --name update-no-ip-container \
+  -e LOGIN=seu_login \
+  -e PASSWORD=sua_senha \
+  -e HOSTNAME=seu_hostname \
+  -e SLEEP_TIME=600 \
+  update-no-ip
+
+```
+Se você já configurou as variáveis diretamente no Dockerfile, pode usar o comando sem definir as variáveis de ambiente:
+```bash
+sudo docker run -d --name update-no-ip-container update-no-ip
+```
+
+4. Verificar os Logs do Container
+Para verificar se o container está funcionando corretamente e para visualizar os logs, use:
+```bash
+sudo docker logs update-no-ip-container
+```
+
+
+
+
+
+
+
+
+
+
+
