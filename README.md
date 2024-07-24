@@ -37,12 +37,12 @@ ENV PASSWORD=????
 ENV HOSTNAME=????
 ENV SLEEP_TIME=????
 ```
-Substitua ???? pelos valores apropriados:
+Substitua `????` pelos valores apropriados:
 
-LOGIN: Seu login para o serviço de DNS.
-PASSWORD: Sua senha para o serviço de DNS.
-HOSTNAME: O nome do host para o qual o IP deve ser atualizado.
-SLEEP_TIME: O intervalo em segundos entre atualizações de IP (por exemplo, 600 para 10 minutos).
+- `LOGIN`: Seu login para o serviço de DNS.
+- `PASSWORD`: Sua senha para o serviço de DNS.
+- `HOSTNAME`: O nome do host para o qual o IP deve ser atualizado.
+- `SLEEP_TIME`: O intervalo em segundos entre atualizações de IP (por exemplo, 600 para 10 minutos).
 
 Depois de modificar, o bloco deve ficar assim:
 ```bash
